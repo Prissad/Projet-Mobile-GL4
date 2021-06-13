@@ -5,7 +5,7 @@ import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class BagService {
-  final String bagUrl = "https://ecommerce-node-junior.herokuapp.com/api/bag";
+  final String bagUrl = "http://10.0.2.2:3001/api/bag";
   List<Product> bag = [];
 
   Future<List<Product>> getBag() async {
@@ -35,17 +35,17 @@ class BagService {
       print("Deleted");
     }
   }
-Future<void> addToBag(String id) async {
-      SharedPreferences prefs = await SharedPreferences.getInstance();
+
+  Future<void> addToBag(String id) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
     String token = prefs.getString("token");
 
-  final response = await http.post(bagUrl,
-          headers: {"content-type": "application/json",'x-auth-token': token},
-          body: json
-              .encode({"id": id}));
+    final response = await http.post(bagUrl,
+        headers: {"content-type": "application/json", 'x-auth-token': token},
+        body: json.encode({"id": id}));
 
-        if (response.statusCode == 200) {
-          print('added to bag');
-        }
-}
+    if (response.statusCode == 200) {
+      print('added to bag');
+    }
+  }
 }

@@ -12,7 +12,8 @@ class LoginInRegistrationScreen extends StatelessWidget {
         width: double.infinity,
         decoration: BoxDecoration(
           image: DecorationImage(
-              image: AssetImage("assets/images/background.jpg"), fit: BoxFit.cover),
+              image: AssetImage("assets/images/bg_login.png"),
+              fit: BoxFit.cover),
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -27,12 +28,8 @@ class LoginInRegistrationScreen extends StatelessWidget {
                   fontSize: 35,
                   color: Colors.white),
             ),
-            Text(
-              "Our App",
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 35,
-                  color: Colors.white),
+            Image.asset(
+              "assets/images/logo.png",
             ),
             SizedBox(height: size.height * 0.45),
             RoundedButton(

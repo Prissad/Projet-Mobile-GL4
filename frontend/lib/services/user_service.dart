@@ -4,9 +4,8 @@ import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class UserService {
-  final String userUrl =
-      "https://ecommerce-node-junior.herokuapp.com/api/users";
-  final String authUrl = "https://ecommerce-node-junior.herokuapp.com/api/auth";
+  final String userUrl = "http://10.0.2.2:3001/api/users";
+  final String authUrl = "http://10.0.2.2:3001/api/auth";
 
   dynamic addUser(name, email, password) async {
     try {

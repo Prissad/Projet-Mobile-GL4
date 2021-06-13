@@ -7,8 +7,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../models/product.dart';
 
 class ProductService {
-  final String productUrl =
-      "https://ecommerce-node-junior.herokuapp.com/api/products/";
+  final String productUrl = "http://10.0.2.2:3001/api/products/";
 
   Future<List<Product>> getProducts() async {
     SharedPreferences prefs = await SharedPreferences.getInstance();
@@ -69,7 +68,7 @@ class ProductService {
       List<dynamic> body = jsonDecode(res.body);
       List<Product> products =
           body.map((dynamic item) => Product.fromJson(item)).toList();
-          print(products);
+      print(products);
       return products;
     } else {
       print("Can't get products");

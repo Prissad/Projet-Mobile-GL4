@@ -120,24 +120,6 @@ class _RegistartionScreenState extends State<RegistartionScreen> {
                       Container(
                         child: Column(
                           children: <Widget>[
-                            Align(
-                              alignment: Alignment.topLeft,
-                              child: Text(
-                                "New",
-                                style: TextStyle(
-                                    color: Colors.black,
-                                    fontSize: 30,
-                                    fontWeight: FontWeight.bold),
-                              ),
-                            ),
-                            Align(
-                              alignment: Alignment.topLeft,
-                              child: Text(
-                                "Account",
-                                style: TextStyle(
-                                    color: Colors.black, fontSize: 30),
-                              ),
-                            ),
                             (errorMessage != null)
                                 ? Align(
                                     alignment: Alignment.topLeft,

@@ -5,8 +5,6 @@ import 'package:flutter_ecommerce_project/views/screens/bag_screen.dart';
 import 'package:flutter_ecommerce_project/views/screens/home_screen.dart';
 import 'package:flutter_ecommerce_project/views/screens/loginIn_registration_screen.dart';
 import 'package:flutter_ecommerce_project/views/screens/profile_screen.dart';
-import 'package:flutter_ecommerce_project/views/screens/update_profile_screen.dart';
-import 'package:flutter_icons/flutter_icons.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:jwt_decoder/jwt_decoder.dart';
 
