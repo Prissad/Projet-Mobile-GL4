@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "157993883848",
+    "project_id": "flater-gl4",
+    "storage_bucket": "flater-gl4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:157993883848:android:f40f44b413760847002dfd",
+        "android_client_info": {
+          "package_name": "com.example.flutter_ecommerce_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "157993883848-tsgp609neidoshj9urfblqauit43il28.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.flutter_ecommerce_project",
+            "certificate_hash": "494326c0f563b76ef5d4b60dc4eb89bdb5f5231e"
+          }
+        },
+        {
+          "client_id": "157993883848-p143re9jf187o8q1qbrvd03nho6ful22.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtIV0k44gGEOUoyvyB3xIflJzCp1JJ5cM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "157993883848-p143re9jf187o8q1qbrvd03nho6ful22.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
